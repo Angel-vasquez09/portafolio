@@ -1,8 +1,17 @@
+@font-face{
+  font-family: CasCadiaBold;
+  src: url('../public/fonts/CascadiaCode-Bold.otf');
+}
+@font-face{
+  font-family: CasCadiaLight;
+  src: url('../public/fonts/CascadiaCode-Light.otf');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: CasCadiaLight, CascadiaBold, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +22,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-bold{
+  font-family: CascadiaBold;
 }
