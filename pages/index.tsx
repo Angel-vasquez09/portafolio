@@ -31,13 +31,22 @@ const Home: NextPage = () => {
             <div className='absolute top-0 left-0 md:top-4 md:right-4 blur-[120px] md:blur-[175px] w-11/12 h-5/6 md:w-1/3 md:h-1/3 border rounded-full bg-secondary'></div>
 
             <div className='hidden md:flex md:flex-col md:items-end md:pr-5 pl-3 pb-3 relative w-full h-auto'>
-              <h2 className='text-xs md:text-lg text-white font-bold'>Proyecto recien</h2>
-              <div onClick={ () => push('https://movies-vasquez.vercel.app/pelis/')} className='cursor-pointer border border-primary hover:border-secondary w-40 h-20 md:w-80 md:h-40 rounded-xl overflow-hidden'>
-                <Image
-                  className=''
-                  objectFit="cover" quality={100} width={350} height={190}
-                  src={'/imgs/proyecto1/img1.jpg'} alt="img1"
-                />
+              <h2 className='text-xs md:text-lg text-white font-bold'>Proyectos recien</h2>
+              <div className='flex'>
+                <div onClick={ () => push('https://movies-vasquez.vercel.app/pelis/')} className='mx-1 cursor-pointer border border-primary hover:border-secondary w-40 h-20 md:w-80 md:h-40 rounded-xl overflow-hidden'>
+                  <Image
+                    className=''
+                    objectFit="cover" quality={100} width={350} height={190}
+                    src={'/imgs/proyecto1/img1.jpg'} alt="img1"
+                  />
+                </div>
+                <div onClick={ () => push('https://tienda-angular.vercel.app/home')} className='mx-1 cursor-pointer border border-primary hover:border-secondary w-40 h-20 md:w-80 md:h-40 rounded-xl overflow-hidden'>
+                  <Image
+                    className=''
+                    objectFit="cover" quality={100} width={350} height={190}
+                    src={'/imgs/proyecto2/img1.jpg'} alt="img1"
+                  />
+                </div>
               </div>
             </div>
         </div>}
